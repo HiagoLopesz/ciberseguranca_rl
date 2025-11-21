@@ -1,0 +1,70 @@
+1- primeira saida
+
+rl/agente/rl_agente.py
+Iniciando Treinamento Q-Learning...
+Episódio 0: Recompensa Total = 23.00, Epsilon = 1.00
+Episódio 100: Recompensa Total = -292.00, Epsilon = 0.90
+Episódio 200: Recompensa Total = -109.00, Epsilon = 0.80
+Episódio 300: Recompensa Total = 46.00, Epsilon = 0.70
+Episódio 400: Recompensa Total = -51.00, Epsilon = 0.60
+Episódio 500: Recompensa Total = -23.00, Epsilon = 0.50
+Episódio 600: Recompensa Total = 38.00, Epsilon = 0.40
+Episódio 700: Recompensa Total = 54.00, Epsilon = 0.30
+Episódio 800: Recompensa Total = 49.00, Epsilon = 0.20
+Episódio 900: Recompensa Total = 219.00, Epsilon = 0.10
+
+Treinamento Concluído.
+
+## 📋 Tabela Q Final (Conhecimento do Agente) ##
+Linhas = Estados (0:Normal a 3:Alta Ameaça), Colunas = Ações (0:Permitir, 1:Bloquear)
+[[  2.47600821  -3.45966426]
+ [  2.5         -3.21408284]
+ [  0.27121302   3.43482311]
+ [-37.21240992  37.01319411]]
+
+## 🧠 Política Final (Decisões Preditivas) ##
+Estado de Ameaça 0: Decisão Ótima -> PERMITIR
+Estado de Ameaça 1: Decisão Ótima -> PERMITIR
+Estado de Ameaça 2: Decisão Ótima -> BLOQUEAR
+Estado de Ameaça 3: Decisão Ótima -> BLOQUEAR
+
+Recompensa Média nos Últimos 50 Episódios: 1633.66
+
+--- Interpretação para o Artigo ---
+Q(Estado=3, Permitir): -37.21
+Q(Estado=3, Bloquear): 37.01
+
+2- segunda saida
+
+Iniciando Treinamento Q-Learning...
+Episódio 0: Recompensa Total = -205.00, Epsilon = 1.00
+Episódio 100: Recompensa Total = -36.00, Epsilon = 0.90
+Episódio 200: Recompensa Total = -106.00, Epsilon = 0.80
+Episódio 300: Recompensa Total = 45.00, Epsilon = 0.70
+Episódio 400: Recompensa Total = -315.00, Epsilon = 0.60
+Episódio 500: Recompensa Total = -100.00, Epsilon = 0.50
+Episódio 600: Recompensa Total = 33.00, Epsilon = 0.40
+Episódio 700: Recompensa Total = -93.00, Epsilon = 0.30
+Episódio 800: Recompensa Total = 65.00, Epsilon = 0.20
+Episódio 900: Recompensa Total = 515.00, Epsilon = 0.10
+
+Treinamento Concluído.
+
+## 📋 Tabela Q Final (Conhecimento do Agente) ##
+Linhas = Estados (0:Normal a 3:Alta Ameaça), Colunas = Ações (0:Permitir, 1:Bloquear)
+[[  2.46632036  -1.14343597]
+ [  2.5          0.8291976 ]
+ [  0.2057829    0.87406473]
+ [-26.18560026  52.97635859]]
+
+## 🧠 Política Final (Decisões Preditivas) ##
+Estado de Ameaça 0: Decisão Ótima -> PERMITIR
+Estado de Ameaça 1: Decisão Ótima -> PERMITIR
+Estado de Ameaça 2: Decisão Ótima -> BLOQUEAR
+Estado de Ameaça 3: Decisão Ótima -> BLOQUEAR
+
+Recompensa Média nos Últimos 50 Episódios: 1369.08
+
+--- Interpretação para o Artigo ---
+Q(Estado=3, Permitir): -26.19
+Q(Estado=3, Bloquear): 52.98
